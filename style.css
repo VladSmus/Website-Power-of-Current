@@ -1,144 +1,234 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 /* ------ General styles ------ */
 body {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .container {
-    max-width: 970px;
-    padding: 0 15px;
-    margin: 0 auto;
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 p {
-    color: #6A859C;
-    line-height: 1.8;
-}
- /* ------ Header styles ------ */
-.main_icon {
-    display: inline-block;
-    padding-right: 10px;
-    width: 42px;
-    height: 42px;
+  color: #6a859c;
+  line-height: 1.8;
 }
 
+.title-wrapper {
+  margin-bottom: 60px;
+}
+
+.title {
+  margin-bottom: 17px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #676770;
+}
+.subtitle {
+  font-size: 17px;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8e8e9c;
+}
+.common-section {
+  text-align: center;
+  padding: 80px 0;
+}
+.common-section--dark {
+  background-color: #192024;
+}
+.common-section--dark * {
+  color: #fff;
+}
+.common-section--dark .subtitle {
+  color: #8e8e9c;
+}
+
+/* ------ Header styles ------ */
+.main_icon {
+  display: inline-block;
+  padding-right: 10px;
+  width: 42px;
+  height: 42px;
+}
 
 .header {
-    padding: 20px 0;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    background-color: #fff;
-    top: 0;
-    left: 0;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
 }
 
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    font-size: 25px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #69B9FF;
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #69b9ff;
 }
 
 .header__nav ul {
-    display: flex;
-
+  display: flex;
 }
 
-.header__nav li+li {
-    margin-left: 40px;
+.header__nav li + li {
+  margin-left: 40px;
 }
 
 .header__nav a {
-    font-size: 16px;
-    color: #676770;
-    transition: color 0.2s;
+  font-size: 16px;
+  color: #676770;
+  transition: color 0.2s;
 }
 
 .header__nav a:hover {
-    color: #0082F3;
+  color: #0082f3;
 }
 
 .header__nav a:active {
-    color: #0062b6;
+  color: #0062b6;
 }
- /* ------ MAIN styles ------ */
-.main {}
- /* ------ Welcome styles ------ */
+/* ------ MAIN styles ------ */
+.main {
+}
+/* ------ Welcome styles ------ */
 
 .welcome {
-    min-height: 600px;
-    height: 100vh;
-    padding: 195px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align:center;
-    background-color: #676770;
-    background-image: url(img/all_naked_men.gif);
-    background-size: cover;
-    background-position: center;
+  min-height: 600px;
+  height: 100vh;
+  padding: 195px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  background-color: #676770;
+  background-image: url(img/all_naked_men.gif);
+  background-size: cover;
+  background-position: center;
 }
-
 
 .welcome__heading {
-    text-shadow: 3px 3px 5px gray;
-    margin-bottom: 400px;
-    color: #0052b6;
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: 10px;
-    text-transform: uppercase;
+  text-shadow: 3px 3px 5px gray;
+  margin-bottom: 400px;
+  color: #0052b6;
+  font-size: 59px;
+  line-height: 1;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
 
-
 .welcome__links > * + * {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .link-primary {
-    display: inline-block;
-    padding: 11px 30px;
-    
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background-color: #69B9FF;
-    border-radius: 4px;
-    transition: background-color 0.1s;
+  display: inline-block;
+  padding: 11px 30px;
+
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #69b9ff;
+  border-radius: 4px;
+  transition: background-color 0.1s;
 }
 .link-primary:hover {
-    background-color: #7cc2ff;
+  background-color: #7cc2ff;
 }
 .link-primary:active {
-    background-color: #0f8fff;
+  background-color: #0f8fff;
 }
 
 .link {
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    transition: border-color 0.1s, background-color 0.1s;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  transition:
+    border-color 0.1s,
+    background-color 0.1s;
 }
 .link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 .link:active {
-    background-color:rgba(0, 0, 0, 0.2);
-    border-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ------ ABOUT (what we do) styles ------ */
+
+.about {
+}
+
+.about .cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about .card {
+  padding: 35px 15px 20px;
+  width: 300px;
+  border: 1px solid #dcebf7;
+  border-radius: 5px;
+}
+.about .card img {
+  margin-bottom: 2opx;
+  width: 94px;
+  height: 94px;
+  object-fit: contain;
+}
+.about .card h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #676770;
+}
+
+/* ------ ABOUT (Founder) styles ------ */
+.services {
+}
+
+.services .cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services .card {
+  width: 45%;
+}
+.services .card h4 {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+.services .card img {
+  margin-bottom: 20px;
+}
+
+.services .link {
+  margin-top: 15px;
 }
