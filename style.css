@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* General styles */
+/* ------ General styles ------ */
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -17,7 +17,7 @@ p {
     color: #6A859C;
     line-height: 1.8;
 }
-
+ /* ------ Header styles ------ */
 .main_icon {
     display: inline-block;
     padding-right: 10px;
@@ -27,17 +27,118 @@ p {
 
 
 .header {
-
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    top: 0;
+    left: 0;
 }
 
-.container {
-
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #69B9FF;
+}
+
+.header__nav ul {
+    display: flex;
 
 }
 
-.header__nav {
+.header__nav li+li {
+    margin-left: 40px;
+}
+
+.header__nav a {
+    font-size: 16px;
+    color: #676770;
+    transition: color 0.2s;
+}
+
+.header__nav a:hover {
+    color: #0082F3;
+}
+
+.header__nav a:active {
+    color: #0062b6;
+}
+ /* ------ MAIN styles ------ */
+.main {}
+ /* ------ Welcome styles ------ */
+
+.welcome {
+    min-height: 600px;
+    height: 100vh;
+    padding: 195px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align:center;
+    background-color: #676770;
+    background-image: url(img/all_naked_men.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.welcome__heading {
+    text-shadow: 3px 3px 5px gray;
+    margin-bottom: 400px;
+    color: #0052b6;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+
+.welcome__links > * + * {
+    margin-left: 20px;
+}
+
+.link-primary {
+    display: inline-block;
+    padding: 11px 30px;
     
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #69B9FF;
+    border-radius: 4px;
+    transition: background-color 0.1s;
+}
+.link-primary:hover {
+    background-color: #7cc2ff;
+}
+.link-primary:active {
+    background-color: #0f8fff;
+}
+
+.link {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    transition: border-color 0.1s, background-color 0.1s;
+}
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.link:active {
+    background-color:rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.5);
 }
