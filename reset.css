@@ -37,3 +37,32 @@ img, svg, video {
     object-fit: cover;
 }
 
+/* My form*/
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input::-ms-clear{
+    display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend{
+    display: block;
+}
