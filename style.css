@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /* General styles */
 body {
     font-family: "Open Sans", sans-serif;
@@ -15,4 +16,28 @@ body {
 p {
     color: #6A859C;
     line-height: 1.8;
+}
+
+.main_icon {
+    display: inline-block;
+    padding-right: 10px;
+    width: 42px;
+    height: 42px;
+}
+
+
+.header {
+
+}
+
+.container {
+
+}
+
+.logo {
+
+}
+
+.header__nav {
+    
 }
