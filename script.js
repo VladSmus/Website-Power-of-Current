@@ -14,6 +14,8 @@ function showTab(index) {
   tabsItems[index].classList.remove("hide");
   tabsBtns[index].classList.add("active");
 }
+hideTabs();
+showTab(0);
 
 tabsBtns.forEach((btn, index) =>
   btn.addEventListener("click", () => {
@@ -22,7 +24,7 @@ tabsBtns.forEach((btn, index) =>
   }),
 );
 
-// Anchors
+// Anchors for buttons HOME and LINKS
 const anchors = document.querySelectorAll(".header__nav a");
 anchors.forEach((anchor) => {
   anchor.addEventListener("click", function (event) {
