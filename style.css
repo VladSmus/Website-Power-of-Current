@@ -18,6 +18,9 @@ p {
   line-height: 1.8;
 }
 
+.hide {
+  display: none !important;
+}
 .title-wrapper {
   margin-bottom: 60px;
 }
@@ -254,8 +257,20 @@ p {
   margin-left: 15px;
 }
 
+.tabs__item {
+  animation: fade 1s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .tabs__item img {
   margin-bottom: 15px;
+  max-height: 620px;
 }
 .tabs__item h4 {
   margin-bottom: 15px;
