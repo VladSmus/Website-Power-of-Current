@@ -55,7 +55,7 @@ p {
 }
 
 /* ------ Header styles ------ */
-.main_icon {
+.main__icon {
   display: inline-block;
   padding-right: 10px;
   width: 42px;
@@ -384,6 +384,19 @@ p {
   .welcome__heading {
     font-size: 28px;
   }
+  .logo {
+    width: 150px;
+  }
+  .header__nav {
+    margin-left: 0;
+  }
+
+  .header .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    margin: 0 0;
+  }
   .services .cards-wrapper {
     flex-direction: column;
     align-items: center;
@@ -401,6 +414,7 @@ p {
   body {
     font-size: 12px;
   }
+
   .header__nav li + li {
     margin-left: 15px;
   }
